@@ -13,7 +13,7 @@ var arr, stop, time_left = 60,
         function timer() {
             var e = document.getElementById("time-elapsed");
             if (e.innerHTML = time_left, -1 == --time_left) {
-                accuracy = Math.floor(correct / (correct + incorrect) * 100), clearTimeout(stop), document.getElementById("typing_space").value = "Time's up - HINDITYPINGTEST.IN";
+                accuracy = Math.floor(correct / (correct + incorrect) * 100), clearTimeout(stop), document.getElementById("typing_space").value = "well done, LESSONPLAN.IN";
                 var t = Math.floor(correct - incorrect / 2);
                 t < 0 && (t = 0), document.getElementById("display_space").innerHTML = '<div style="margin-left:10px"><table class="table table-bordered" style="font-size:20px;margin-bottom:0 ;margin-top : 7px"><tr><td><span>Correct : ' + correct + "</span></td><td><span>Incorrect = " + incorrect + "</span></td></tr><tr><td>Keystrokes : " + keystrokes + "</td><td>Accuracy : " + accuracy + '%</td></tr><tr style="text-align:center"><td colspan = "2"><span>Words Per Minute : ' + t + "</span></td></tr><div>", $('input[type="text"], textarea').attr("readonly", "readonly")
             } else stop = setTimeout("timer()", 1e3);
